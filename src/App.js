@@ -1,23 +1,20 @@
+import React,{useState} from 'react'
 import logo from './logo.svg';
 import './App.css';
+import Student from './Student'
 
 function App() {
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+     <h1>Props in React :)</h1>
+
+     <Student name={"user"} email="guruva@gmail.com"/>
+     <Student name={"ramesh"} email="user@gmail.com" />
+     <Student name={"kishore"} email="kishore@gmail.com" />
+
+
     </div>
   );
 }
